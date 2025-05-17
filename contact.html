@@ -7,98 +7,68 @@
   <link rel="stylesheet" href="styles.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="contact-body">
 
-<!-- Header -->
-<header class="main-header">
-  <div class="logo">
-    <img src="images/Logo 2.jpg" alt="Innoveraa Logo" class="logo-img">
-    <span>Innoveraa</span>
-  </div>
-  <nav>
-    <ul class="nav-links">
-      <li><a href="index.html#hero">Home</a></li>
-      <li class="dropdown">
-        <a href="index.html#services">Services</a>
-        <ul class="dropdown-menu">
-          <li><a href="cloud.html">Cloud Architecture</a></li>
-          <li><a href="cyber.html">Cybersecurity</a></li>
-          <li><a href="network.html">Server Infrastructure</a></li>
-          <li><a href="support.html">24/7 Support</a></li>
-        </ul>
-      </li>
-      <li><a href="client.html">Clients</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
-  <button id="themeBtn" class="theme-toggle">Theme: light</button>
-</header>
+  <!-- Header -->
+  <header class="main-header">
+    <div class="logo">
+      <img src="images/Logo 2.jpg" alt="Innoveraa Logo" class="logo-img">
+      <span>Innoveraa</span>
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html#hero">Home</a></li>
+        <li class="dropdown">
+          <a href="index.html#services">Services</a>
+          <ul class="dropdown-menu">
+            <li><a href="cloud.html">Cloud Architecture</a></li>
+            <li><a href="cyber.html">Cybersecurity</a></li>
+            <li><a href="network.html">Server Infrastructure</a></li>
+            <li><a href="support.html">24/7 Support</a></li>
+          </ul>
+        </li>
+        <li><a href="client.html">Clients</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <button id="themeBtn" class="theme-toggle">Theme: light</button>
+  </header>
 
-<!-- Hero Section -->
-<section class="hero-split">
-  <div class="hero-text">
-    <h1>Let’s Connect</h1>
-    <p>We're here to answer your questions and guide you through our services. Reach out to us anytime!</p>
-    <a href="#contact-form" class="cta ripple-btn">Reach Out</a>
-  </div>
-</section>
-
-<!-- Contact Info -->
-<section class="contact-intro">
-  <div class="intro-container fade-in">
-    <div class="contact-info-box">
-      <div>
-        <h4>Email</h4>
-        <p><a href="mailto:support@innoveraa.com">support@innoveraa.com</a></p>
-      </div>
-      <div>
-        <h4>Phone</h4>
-        <p><a href="tel:+94123456789">+94 123 456 789</a></p>
-      </div>
-      <div>
-        <h4>Address</h4>
-        <p>123 Innovation Drive, Kandy, Sri Lanka</p>
+  <!-- Contact Hero -->
+  <section class="contact-hero">
+    <div class="contact-info">
+      <h1>Let's Talk</h1>
+      <p>Have questions or need support? Fill out the form or reach out directly. We're here to help!</p>
+      <div class="contact-info-box">
+        <div>
+          <h4>Email</h4>
+          <p><a href="mailto:support@innoveraa.com">IT@innoveraa.com</a></p>
+        </div>
+        <div>
+          <h4>Phone</h4>
+          <p><a href="tel:+94123456789">+94 00 0000 0000</a></p>
+        </div>
+        <div>
+          <h4>Office</h4>
+          <p>Sri Lanka</p>
+        </div>
       </div>
     </div>
-    <div class="social-row">
-      <a href="#"><img src="images/contact.1.avif" alt="Facebook"></a>
-      <a href="#"><img src="images/contact.2.jpg" alt="LinkedIn"></a>
-      <a href="#"><img src="images/contact.3.avif" alt="Twitter"></a>
-    </div>
-  </div>
-</section>
 
-<!-- Contact Form -->
-<section class="contact-form-wrap bounce-in" id="contact-form">
-  <form class="contact-form">
-    <h2>Send Us a Message</h2>
-    <div class="form-row">
-      <div class="floating-label">
-        <input type="text" name="name" required>
-        <label>Full Name</label>
-      </div>
-      <div class="floating-label">
-        <input type="email" name="email" required>
-        <label>Email Address</label>
-      </div>
-    </div>
-    <div class="floating-label">
-      <input type="text" name="subject" required>
-      <label>Subject</label>
-    </div>
-    <div class="floating-label">
-      <textarea name="message" rows="5" required></textarea>
-      <label>Your Message</label>
-    </div>
-    <button type="submit" class="ripple-btn">Send Message</button>
-  </form>
-</section>
+    <form class="contact-form">
+      <h2>Send Us a Message</h2>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
 
-<!-- Footer -->
-<footer>
-  <p>&copy; 2025 Innoveraa. All Rights Reserved.</p>
-</footer>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Innoveraa. All Rights Reserved.</p>
+  </footer>
 
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>

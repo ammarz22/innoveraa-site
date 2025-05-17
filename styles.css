@@ -2,7 +2,7 @@
 :root {
   --bg-color: #ffffff;
   --text-color: #111;
-  --section-bg: #f5f5f5;
+  --section-bg: #00000018;
   --card-bg: #ffffff;
   --accent-color: #00b8d4;
   --subtext-color: #555;
@@ -128,6 +128,8 @@ body {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   flex-direction: column;
   padding: 10px 0;
+  list-style: none; /* 🚫 removes the dots */
+
 }
 
 .dropdown-menu a {
@@ -280,41 +282,113 @@ section {
 }
 
 /* ========== Contact ========== */
-.contact form {
-  max-width: 600px;
-  margin: auto;
+/* ==== New Contact Layout Styles ==== */
+body.contact-body {
+  background: linear-gradient(to bottom right, #f0f2f5, #e0e5ec);
+  color: #111;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+.contact-hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  padding: 60px;
+  box-sizing: border-box;
+}
+
+.contact-info {
+  max-width: 45%;
+}
+
+.contact-info h1 {
+  font-size: 42px;
+  margin-bottom: 20px;
+  color: var(--accent-color);
+}
+
+.contact-info p {
+  font-size: 18px;
+  color: var(--subtext-color);
+  margin-bottom: 30px;
+}
+
+.contact-info-box {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 15px;
 }
 
-.contact input,
-.contact textarea {
-  padding: 15px;
-  background: var(--card-bg);
-  color: var(--text-color);
+.contact-info-box div {
+  background: #fff;
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.contact-info-box h4 {
+  margin: 0 0 5px;
+  color: var(--accent-color);
+}
+
+.contact-info-box p {
+  margin: 0;
+  font-size: 15px;
+}
+
+.contact-form {
+  max-width: 45%;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.contact-form h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: var(--accent-color);
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 14px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 14px;
+  background: var(--accent-color);
+  color: #fff;
   border: none;
-  border-radius: 5px;
-}
-
-.contact input::placeholder,
-.contact textarea::placeholder {
-  color: var(--subtext-color);
-}
-
-.contact button {
-  background-color: var(--accent-color);
-  color: var(--bg-color);
-  padding: 15px;
-  border: none;
-  border-radius: 50px;
   font-weight: bold;
+  border-radius: 50px;
   cursor: pointer;
-  transition: background 0.3s;
+  transition: background 0.3s ease;
 }
 
-.contact button:hover {
-  background-color: var(--hover-accent);
+.contact-form button:hover {
+  background: var(--hover-accent);
+}
+
+@media (max-width: 900px) {
+  .contact-hero {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 40px 20px;
+  }
+
+  .contact-info, .contact-form {
+    max-width: 100%;
+  }
 }
 
 /* ========== Footer ========== */
@@ -579,3 +653,4 @@ footer {
   background: var(--bg-color);
   padding: 0 5px;
 }
+
